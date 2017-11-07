@@ -1,0 +1,218 @@
+body {
+	font-family: "Open-sans", sans-serif;
+	font-size: 17px;
+	line-height: 1.5em;
+	margin:0;
+	padding:0;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	margin:auto;
+}
+
+/* COMMON CLASSES */
+.primary-text {
+	color:#ff9234;
+}
+
+.primary-background {
+	background: #ff9234;
+}
+
+.replace-black {
+	color:#1f3a6a;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.primary-text-title {
+	font-size: 25px;
+	color:#ff9234;
+	text-transform: uppercase;
+}
+
+/* HEADER */
+#main-header {
+	border-bottom: 1px solid #ff9234;
+}
+
+/* NAVBAR */
+#navbar {
+	text-transform: uppercase;
+}
+
+#navbar li {
+	display: inline;
+	padding-right:20px;
+	list-style: none;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: #888;
+}
+
+#navbar li.current a, #navbar a:hover {
+	color: #ff9234;
+	border-bottom: 3px solid #ff9234;
+	padding-bottom: 3px;
+}
+
+/* SHOWCASE */
+#showcase {
+	background:url("../images/showcase.jpg") no-repeat center center;
+	background-attachment: fixed;
+	border-bottom: 1px solid #ff9234;
+	margin-bottom: 30px;
+}
+
+#showcase .row {
+	height:600px;
+}
+
+#showcase h1 {
+	font-size: 40px;
+	margin:0;
+	padding-bottom: 20px;
+	line-height: 50px;	
+}
+
+#showcase p {
+	color:#ccc;
+	margin:0;
+}
+
+#showcase .showcase-content {
+	background: rgba(51, 51, 51, 0.7);
+	color:#fff;
+	border-radius:40px;
+	padding: 40px;
+}
+
+/* SKILLS */
+#skills{
+	border-bottom: 1px solid #ff9234;
+}
+
+#skills h2{
+	font-size: 35px;
+	margin:0;
+	padding-bottom:10px;
+	text-transform: uppercase;
+	color:#1f3a6a;
+}
+
+#skills p{
+	color:#888;
+	margin:0;
+	padding-bottom:40px;
+}
+
+#skills h4{
+	color:#1f3a6a;
+}
+
+#skills .fa{
+	font-size: 60px;
+	color:#ff9234;
+}
+
+
+
+/* PROJECTS */
+#projects{
+	background:url("../images/info-bg.jpg") no-repeat;
+	border-bottom: 1px solid #ff9234;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+#projects h2 {
+	font-size:35px;
+	margin:10;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+
+#projects ul{
+	list-style: none;
+	padding:0; 
+}
+
+#projects li{
+	line-height: 2em;
+	font-size: 20px;
+}
+
+
+/* CONTACT */
+#contact {
+	background: #333;
+	color: white;
+}
+
+#contact h4{
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	font-size:35px;
+}
+
+#contact ul {
+	padding:0;
+	list-style: none;
+	line-height: 2em;	
+}
+
+#contact .fa{
+	color:white;
+	font-size: 25px;
+}
+
+#contact .fa:hover {
+	color:#ff9234;
+}
+
+#contact a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/* FOOTER */
+#main-footer{
+	background:#ff9234;
+	color: #fff;
+	line-height: 10px;
+	padding: 20px 0;
+}
+
+#main-footer .fa-heart{
+	color:red;
+}
+
+
+/* PAGE */
+#page{
+	margin-bottom: 40px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width: 800px) {
+	#showcase h1 {
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 500px) {
+	#showcase .showcase-content {
+		padding: 40px 10px;
+	}
+}
