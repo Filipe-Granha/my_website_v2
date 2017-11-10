@@ -6,9 +6,17 @@
 	<link rel="stylesheet" href="css/flexboxgrid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/flipcard.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/font-mfizz.css">
-	<link rel='shortcut icon' type='image/png' href='images/favicon.png'/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+
 
 	<!-- removes 000webhost banner... -->
 	<style>
@@ -20,18 +28,20 @@
 
 </head>
 <body>
+	
 	<!-- HEADER -->
 	<header id="main-header">
 		<div class="container">
 			<div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-					<h1><span class="primary-text-title">Carlos</span> <span class="replace-black">Filipe</span></h1>
+				<div class="center-lg col-xs-12 col-sm-4 col-md-3 col-lg-3">
+					<!-- <h1><span class="primary-text-title">Carlos</span> <span class="replace-black">Filipe</span></h1> -->
+					<img src="images/logo.png" alt="logo carlos filipe">
 				</div>
 				<div class="col xs-12 col-sm-8 col-md-9 col-lg-9">
 					<nav id="navbar">
 					    <ul>
 					        <li class="current"><a href="index.html">Home</a></li><!--
-					     --><li><a href="#skills">Skills</a></li><!--
+					     --><li><a href="#skills">Tools</a></li><!--
 					     --><li><a href="#projects">Projects</a></li><!--
 					     --><li><a href="#contact">Contact</a></li>
 					    </ul>
@@ -41,13 +51,14 @@
 		</div>
 	</header>
 
+
 	<!-- SHOWCASE -->
 	<section id="showcase">
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
 				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content">
-					<h1 class="showcase-title">Freelance<span class="primary-text"> Developer.</span></h1>
-					<p>Hi! I'm Carlos Filipe, a CodeClan graduate based in Edinburgh, and I'd love to help you grow your business.</p>
+					<h1 class="showcase-title">CARLOS FILIPE<span class="primary-text"> </span></h1>
+					<p>Hi! I'm a Web Developer based in Edinburgh, and I'd love to help you to grow your business.</p>
 				</div>
 			</div>
 		</div>
@@ -58,42 +69,42 @@
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h2>Core Skills</h2>
-					<p>A sample of what I can do to help you with your projects</p>
+					<h2>Core Tools</h2>
+					<p>A sample of what I can use to help your digital projects come to life</p>
 					<!-- SKILLS ROW 1-->
 					<div class="row center-xs center-sm center-md center-lg">
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-html faa-horizontal animated fa-4x"></i><br>
+							<i class="fa icon-html faa-horizontal animated fa-4x"></i>
 							<h4>HTML5</h4>
-							<p>The building blocks of your web app</p>
+							<p>Defines the structure and layout of a Web document by using a variety of tags and attributes</p>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-css faa-ring animated fa-4x"></i><br>
+							<i class="fa icon-css faa-ring animated fa-4x"></i>
 							<h4>CSS3</h4>
-							<p>Including solutions like Bootstrap and Font Awesome</p>
+							<p>Used to define styles for web pages, including the design and layout</p>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-javascript faa-pulse animated fa-4x"></i><br>
+							<i class="fa icon-javascript faa-pulse animated fa-4x"></i>
 							<h4>JavaScript</h4>
-							<p>Covering both client-side and server-side of a web app</p>
+							<p>Adds dynamic and interactive elements to web apps</p>
 						</div>
 					</div>
 					<!-- SKILLS ROW 2-->
 					<div class="row center-xs center-sm center-md center-lg">
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-reactjs faa-wrench animated fa-4x"></i><br>
+							<i class="fa icon-reactjs faa-wrench animated fa-4x"></i>
 							<h4>ReactJS</h4>
 							<p>A JavaScript library for building user interfaces</p>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-java faa-float animated fa-4x"></i><br>
+							<i class="fa icon-java faa-float animated fa-4x"></i>
 							<h4>Java</h4>
-							<p>A "write once, run anywhere" programming language</p>
+							<p>General-purpose computer programming language that is class-based and object-oriented</p>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<i class="fa icon-ruby faa-tada animated fa-4x"></i><br>
+							<i class="fa icon-ruby faa-tada animated fa-4x"></i>
 							<h4>Ruby</h4>
-							<p>Paired with Sinatra or Ruby On Rails, can allow solid back-end solutions</p>
+							<p>A dynamic, object-oriented and general-purpose programming language</p>
 						</div>
 					</div>
 				</div>
@@ -109,24 +120,59 @@
 				<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
 
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 card-front">
-						<a target="_blank" href="https://github.com/Filipe-Granha/Budgetiny">
-						<img src="images/budgetiny_home.png" alt="Budgetiny"></a>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="cardBox">
+					<div class="card color">						
+					<div class=" card-front">
+						<img src="images/gf_caffe_home.png" alt="">
+					</div>
+					<a target="_blank" href="./projects/gf_caffe/index.html">
+					<div class="card-back">"GF CAFFÉ" </br></br>Project ready to deploy for the GF Caffé in Edinburgh.</br></br> </br>
+					</br>(click to open in new tab)</div></a>
+					</div>
+					</div>
+					</div>
+				
+
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="cardBox">
+					<div class="card color">
+					<div class="card-front">
+						<img src="images/budgetiny_home.png" alt="Budgetiny">
+					</div>
+					<a target="_blank" href="https://github.com/Filipe-Granha/Budgetiny">
+					<div class="card-back">"BUDGETINY" </br>1st project created while at CodeClan.</br></br>Budget planner web app. Performs CRUD functions and was built using Ruby, Sinatra, PostgreSQL, HTML and CSS. </br>
+					</br>(click to see project on GitHub)</div></a>
+				    </div>
+				    </div>
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 card-front">
-						<a target="_blank" href="https://github.com/Filipe-Granha/Tazkz">
-						<img src="images/tazkz_home.png" alt="Tazkz"></a>
-					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 card-front">
-						<a target="_blank" href="https://github.com/Filipe-Granha/weekend_11">
-						<img src="images/mapapp_home.png" alt=""></a>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="cardBox">
+					<div class="card color">
+					<div class=" card-front">
+						<img src="images/tazkz_home.png" alt="Tazkz">
 					</div>
-					
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 card-front">
-						<a target="_blank" href="https://github.com/Filipe-Granha/final_project">
-						<img src="images/lotm_home.png" alt=""></a>
+					<a target="_blank" href="https://github.com/Filipe-Granha/Tazkz">
+					<div class="card-back">"TAZKZ" </br>2nd project from CodeClan.</br></br>Android app. A To-do list able to perform CRUD functions using shared preferences. </br>
+					</br>(click to see project on GitHub)</div></a>
+					</div>
+					</div>
+					</div>	
+
+
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="cardBox">
+					<div class="card color">						
+					<div class=" card-front">
+						<img src="images/lotm_home.png" alt="">
+					</div>
+					<a target="_blank" href="https://github.com/Filipe-Granha/final_project">
+					<div class="card-back">"LORDS OF THE MANOR" </br>Final project at CodeClan.</br></br>RESTful web app, using ReactJS, HTML and CSS for the front end and Ruby on Rails for the back end (through the creation of an API), performing CRUD functions. </br>
+					</br>(click to see project on GitHub)</div></a>
+					</div>
+					</div>
 					</div>
 
 				</div>
