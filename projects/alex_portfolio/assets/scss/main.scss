@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Source+Sans+Pro:200,400,700,900');
+
+*{box-sizing: border-box;}
+
+// Variables
+
+
+//Imports
+@import 'reset';
+@import 'vars';
+@import 'typography';
+@import 'grid';
+@import 'modules';
+
+
+.header-background {
+    background: url(../images/hero-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center right 50%;
+	padding: 2rem 1rem;
+	@media #{$med} {
+		padding: 0 1rem 8rem;
+	}
+}
+
+.header {
+	&__container {}
+	&__title {display: none}
+	&__button {}
+
+	
+	@media #{$med} {
+		&__container {
+			display:flex;
+			justify-content: flex-end;
+			padding: 2rem 1rem 3rem;
+		}
+	}
+
+
+	&__sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		background: $sticky;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+		.header {
+			&__container {
+				padding: 1rem;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&__title {
+				display: block;
+			}
+		}
+	}	
+}
+
+#contact-me {
+	display: block;
+	padding: 1rem 0;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	left:0;
+	z-index: 999;
+
+	@media #{$med} {
+		position: relative;
+		width: 13rem;
+		height: auto;
+	}
+}
+
+.is-scrolling {
+	margin-top: 0rem;
+}
+
+
+.hero {	
+	&__headline {
+		// font-size: 2rem;
+		margin-bottom: 2rem;
+		color: #303030;
+		// text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+	} 
+
+	&__description {
+		color: #303030;
+		font-size: 1.5rem;
+		// text-shadow: 0 0.5px 2px rgba(0,0,0,0.8);
+	}
+}
+
+.row.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	// background-color: yellow;
+	
+}
+
+
+
+.portfolio-piece {
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23); 
+	flex: 0 1 300px;
+	// height: 50px;
+	margin: 15px;
+	padding: 1rem;
+	max-width: 95%;
+	height: calc(14rem - 2rem);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $text;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	// margin-bottom: 2rem;
+	&:last-child {margin-bottom: 0}
+	&__title {
+		margin-bottom: .5rem;
+		text-decoration: none;
+	}
+	&__tags {
+		font-family: $SourceSans;
+		font-weight: 900;
+		line-height: 1.25;
+	}
+
+
+	&__title, &__tags {
+		// text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+		color: white;
+		background-color: rgba(22,74,159, 0.4);
+	}
+
+	@media #{$med} {
+		margin-bottom: 1rem;
+	}
+	@media #{$lrg}{
+		height: calc(22rem - 2rem);
+	}
+}
+
+.source_code {
+	text-decoration: none;
+}
+
+.portfolio-tazkz {
+	flex: 0 1 300px;
+	align-self: auto;
+	margin: 15px;
+	// border-style: solid;
+	// border-width: 0.5px;
+	// box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23); 
+	padding: 1rem;
+	width: 100%;
+	height: calc(24rem - 2rem);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	// margin-bottom: 2rem;
+	&:last-child {margin-bottom: 0}
+	
+	@media #{$med} {
+		margin-bottom: 1rem;
+
+	}
+	@media #{$lrg}{
+		height: calc(22rem - 2rem);
+	}
+}
+
+.portfolio-budgetiny {
+	flex: 0 1 300px;
+	align-self: auto;
+	margin: 15px;
+	// border-style: solid;
+	// border-width: 0.5px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23); 
+	padding: 1rem;
+	width: 100%;
+	height: calc(24rem - 2rem);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	// margin-bottom: 2rem;
+	&:last-child {margin-bottom: 0}
+	
+	@media #{$med} {
+		margin-bottom: 1rem;
+
+	}
+	@media #{$lrg}{
+		height: calc(22rem - 2rem);
+	}
+}
+
+.portfolio-lotm {
+	flex: 0 1 100%;
+	align-self: auto;
+	margin: 15px;
+	// border-style: solid;
+	// border-width: 0.5px;
+	padding: 1rem;
+	width: 100%;
+	height: calc(14rem - 2rem);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	// margin-bottom: 2rem;
+	&:last-child {margin-bottom: 0}
+	
+	@media #{$med} {
+		margin-bottom: 1rem;
+
+	}
+	@media #{$lrg}{
+		height: calc(22rem - 2rem);
+	}
+}
+
+.portfolio-mapapp {
+	flex: 0 1 100%;
+	align-self: auto;
+	margin: 15px;
+	// border-style: solid;
+	// border-width: 0.5px;
+	padding: 1rem;
+	width: 100%;
+	height: calc(14rem - 2rem);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: row;
+	// justify-content: center;
+	// margin-bottom: 2rem;
+	&:last-child {margin-bottom: 0}
+	
+	@media #{$med} {
+		margin-bottom: 1rem;
+
+	}
+	@media #{$lrg}{
+		height: calc(22rem - 2rem);
+	}
+}
+
+#blog {
+	background: url(../images/blog-section-background.jpg);
+	text-decoration: none;
+}
+
+.row.blog {
+	// background-size: cover;
+	// background-position: right;
+	// background-repeat: no-repeat;
+	// padding: 2rem 0;
+	// margin-bottom: 0;
+	// @media #{$med} {padding: 3rem 0}
+	// @media #{$lrg} {
+	// 	background-position: top 15% right;
+	// 	padding: 4rem 0;
+// }
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	// background-color: blue;
+
+}
+	
+.containerMap { 
+		// background-color: green;
+		width: 400px;
+		margin-left:30px;
+		float:left;
+   }
+
+ .main-map {
+    	// background-color: pink;
+	   // height: 250px;
+	   // width:400px;
+   }
+
+.blog {
+	&__article-title {
+		margin-top: 2rem;
+		&:first-child {margin-top: 1.5rem}
+	}
+	&__article-link {color: $text}
+	
+	
+	@media #{$med} {
+		&__article-title {max-width: 26rem}
+	}
+}
+
+.introduction {
+	margin-top: 4rem;
+	color: $text;
+	
+}
+
+.introduction.text {
+	margin-bottom: 6rem;
+	font-family: $SourceSans;
+	font-size: 1.5rem;
+}
+
+.contact {
+	background: $text;
+	color: white;
+	padding: 4rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column nowrap;
+	// &__title, &__social, &__button {flex: 100%;}
+	&__social {
+		margin-bottom: 2rem;
+	}
+	&__button {
+		width: 18rem;
+	}
+	&__contacts {
+		text-decoration: none;
+	}
+}
+
+.social {
+		display: flex;
+		justify-content: center;
+
+		&__button {
+			margin: 0 1rem;
+			font-size: 1.5rem;
+			color: white;
+			transition: all .25s ease-in-out;
+
+			&:hover {color: $link;}
+		}
+}
+
+.footer-list {
+	color: $light;
+	font-size: .875rem;
+	margin: 0 auto 8rem;
+
+	&__item {
+		display: inline-block;
+		margin-right: .5rem;
+		&:after {
+			content: "|";
+			margin-left: .5rem;
+		}
+
+		&:last-child {
+			&:after {content: none}
+		}
+	}
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- removes 000webhost banner... -->
+	<!-- <style>
+	img[src*="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"] {
+    display: none;
+	}
+	</style> -->
+
+	<style>
+	img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+	}
+</style>
+	<!-- ...end of banner removal -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Alex Junior | Photographer</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- <link rel='shortcut icon' type='image/png' href='assets/images/favicon.png'/> -->
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+
+</head>
+
+<body class="is-scrolling">
+	<div class="header-background">
+		<header class="header__sticky">
+			<div class="container header__container">
+				<h1 id="site-title" class="header__title">Alex Junior</h1>
+				<a href="#contact" class="button header__button" id="contact-me">Get in touch</a>
+			</div>
+		</header>
+
+		<div class="hero row">
+			<h1 class="hero__headline med--col-5 lrg--col-7">
+				Hi! I'm Alex Junior;<br>
+				a Photographer based in Glasgow, UK.
+			</h1>
+			<p id="description" class="hero__description med--col-5 lrg--col-7">I love photography!</p>
+			<p id="description" class="hero__description med--col-5 lrg--col-7">And I want to help you to eternalize your best moments!</p>
+			<p id="description" class="hero__description med--col-5 lrg--col-7"></p>
+			<a href="#blog" class="hero__link block med--col-5 lrg--col-7"></a>
+		</div>
+	</div>
+	
+	<section id="portfolio">
+		<div class="row portfolio" class="projects">
+			<h2 class="title-flex">Works</h2>
+
+<!-- 
+			    <div class="portfolio-piece med--col-4"  id="budgetiny">
+				<div >
+					<h3 class="portfolio-piece__title">Budgetiny</h3>
+					<p class="portfolio-piece__tags"> RESTful web app, using Ruby, Sinatra and PostgreSQL</p>
+				</div>
+				<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/budgetiny_home.png')"><a href="budgetiny.html"></a>
+				</div>
+				</div> -->
+
+
+			<div id="budgetiny" class="portfolio-piece med--col-4" style="background-image: url('assets/images/budgetiny_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Budgetiny</h3>
+				<p class="portfolio-piece__tags"> RESTful web app: Ruby, Sinatra, PostgreSQL, HTML and CSS</p><a href="budgetiny.html"></a> -->
+				</div>
+			</div>
+
+			<div id="tazkz" class="portfolio-piece med--col-4" style="background-image: url('assets/images/tazkz_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Tazkz</h3>
+				<p class="portfolio-piece__tags"> Android app (To-do list)</p><a href="tazkz.html"></a> -->
+				</div>
+			</div>
+
+			<div id="map" class="portfolio-piece med--col-4" style="background-image: url('assets/images/mapapp_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Map App</h3>
+				<p class="portfolio-piece__tags">Web app: Javascript, NodeJS, HTML, CSS and Google Maps API calls</p><a href="mapapp.html"></a> -->
+			</div>
+			</div>
+
+			<div id="properties" class="portfolio-piece med--col-4" style="background-image: url('assets/images/lotm_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Lord of the Manor</h3>
+				<p class="portfolio-piece__tags"> RESTful web app: React, Ruby on Rails, HTML and CSS</p><a href="lordofthemanor.html"></a> -->
+			</div>
+			</div>
+
+			<div id="properties" class="portfolio-piece med--col-4" style="background-image: url('assets/images/bicycle_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Lord of the Manor</h3>
+				<p class="portfolio-piece__tags"> RESTful web app: React, Ruby on Rails, HTML and CSS</p><a href="lordofthemanor.html"></a> -->
+			</div>
+			</div>
+
+			<div id="properties" class="portfolio-piece med--col-4" style="background-image: url('assets/images/cow_home.jpg')">
+				<div>
+				<!-- <h3 class="portfolio-piece__title">Lord of the Manor</h3>
+				<p class="portfolio-piece__tags"> RESTful web app: React, Ruby on Rails, HTML and CSS</p><a href="lordofthemanor.html"></a> -->
+			</div>
+			</div>
+
+
+
+		</div>
+	</section>
+	
+	<!-- <section id="blog">
+		<div class="row blog">
+			<div class="blog blog__container">
+				<h2 class="title-flex">Where was I trained</h2>
+				<h3 class="blog__article-title"><a class="blog__article-link" href="">Lorem ipsum dolor.</a></h3>
+				<h3 class="blog__article-title"><a class="blog__article-link" href="">Aspernatur, cumque</a></h3>
+				<h3 class="blog__article-title"><a class="blog__article-link" href="">Sed, earum, dolor!</a></h3>
+				<h3 class="blog__article-title"><a class="blog__article-link" href="">Ex, ullam officiis</a></h3>
+			</div>
+			<div class="introduction">
+				<div class="introduction title">
+					<h2>Thanks for stopping by!</h2>
+				</div>
+					
+				<div class="introduction text">
+					<p><span style="font-weight:900">T</span>o keep it simple, I’d say I’m a doer and a learner.
+I enjoy setting myself goals, and working my way up to achieve them.
+ </p>
+					<p><span style="font-weight:900">T</span>he following are some of the tools I've had the chance to work with at CodeClan:</p>
+					<ul>
+						<li>- JavaScript & ReactJS</li>
+						<li>- Java & Android Studio</li>
+						<li>- Ruby, Sinatra & Ruby on Rails</li>
+						<li>- MongoDB & PostgreSQL</li>
+						<li>- Version control system: Git</li>
+						<li>- TDD & Agile methodologies</li>
+					</ul></br>
+					<p><span style="font-weight:900">A</span>lthough I’ve done a few different things throughout my professional path, I’ve decided to focus on starting a career in IT,  and what your company can expect from me is that I’ll work as hard as it takes to be successful at it.
+					</p>
+					<p><span style="font-weight:900">G</span>et in touch, it would be great to know how could I contribute to your team's performance!</p>
+				</div>
+				
+              <div class="main-map">
+              	<!-- <p>class main-map</p> -->
+          <!--     </div>
+            </div>
+
+		</div>
+
+		
+
+	</section> --> 
+
+	<section id="contact" class="contact">
+		<h2 class="contact__title white center">Get in Touch</h2>
+		<!-- <div class="contact__social social">
+			<a target="_blank" href="https://www.linkedin.com/in/carlos-filipe-019336147/" class="social__button linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a target="_blank" href="https://github.com/Filipe-Granha" class="social__button github"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a target="_blank" href="mailto: granha.carlos@gmail.com" class="social__button email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		</div> -->
+		<h3 class="contact__contacts contacts">07545536278</h3>
+		<h3 class="contact__contacts contacts">alex.jones1990@gmail.com</h3>
+		<!-- <a href="" class="button contact__button" id="contact-button">Contact Me</a> -->
+	</section>
+
+	<footer class="container">
+		<ul class="footer-list">
+			<li class="footer-list__item">© 2017 All Rights reserved</li>
+			<li class="footer-list__item">Designed by <a target="_blank" href="https://www.carlosfilipe.cf" class="developer">CF</a></li>
+			<!-- <li class="footer-list__item">Built with <i class="fa fa-heart" aria-hidden="true"></i> in Edinburgh, UK</li> -->
+		</ul>
+	</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
