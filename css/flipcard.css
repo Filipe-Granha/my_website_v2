@@ -43,9 +43,15 @@
 	height: 350px;
 	justify-content: center;
 	align-items: center;
+	transform: rotateY(0deg); /* for Firefox */
 }
 
 .cardBox:hover .card{
 	transform: rotateY(180deg);
 }
+
+
+
+
+
 
